@@ -15,6 +15,7 @@ public class Main {
 
             String søgenavn = "Tess";
             Contact fundet = phoneBook.findByName(søgenavn);
+
             if(fundet == null){
                 System.out.println(søgenavn + " findes ikke i telefonbogen");
             } else {

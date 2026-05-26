@@ -1,6 +1,6 @@
 package Exam4;
 
-    public class SmsNotifier implements Notifier{
+    public class SmsNotifier implements Notifier {
 
         @Override
         public void send(String message) {

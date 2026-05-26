@@ -14,7 +14,7 @@ public class Car {
         if(!engine.isRunning()){
             engine.start();
         } else {
-            System.out.println("Bilen kører allerede");
+            System.out.println("The car is already running");
         }
     }
 

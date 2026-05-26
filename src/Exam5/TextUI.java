@@ -17,22 +17,21 @@ import java.util.Scanner;
         }
 
         public void start(){
-            String menu = "1. Tilføj besked\n2. Vis alle beskeder\n3. Afslut";
-            boolean running = true;
+            boolean isRunning = true;
 
-            while(running){
-                String valg = promptText(menu);
+            while(isRunning){
+                String choice = promptText("Menu:\n1.Add message\n2.Show all messages\n3.Exit");
 
-                switch(valg){
+                switch(choice){
                     case "1":
-                        String besked = promptText("Indtast besked:");
-                        app.add(besked);
+                        String message = promptText("Enter message: ");
+                        app.add(message);
                         break;
                     case "2":
                         System.out.println(app.listAllMessages());
                         break;
                     case "3":
-                        running = false;
+                        isRunning = false;
                         break;
                 }
             }

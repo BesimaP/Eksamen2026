@@ -6,14 +6,14 @@ public class Main {
         Engine engine = new Engine();
         Car car = new Car("Tesla", engine);
 
-        System.out.println("Motor kører: " + car.isRunning());
+        System.out.println("Engine running: " + car.isRunning());
 
         car.start();
-        System.out.println("Motor kører: " + car.isRunning());
+        System.out.println("Engine running: " + car.isRunning());
 
         car.start();   // dobbelt-start, skal afvises
 
         car.stop();
-        System.out.println("Motor kører: " + car.isRunning());
+        System.out.println("Engine running: " + car.isRunning());
     }
 }

@@ -12,13 +12,4 @@ public class Contact {
     public String getName(){
         return name;
     }
-
-    public String getPhoneNumber(){
-        return phoneNumber;
-    }
-
-    @Override
-    public String toString() {
-        return "Name: " + name + ", PhoneNumber: " + phoneNumber;
-    }
 }

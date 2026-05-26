@@ -18,6 +18,7 @@ import java.util.Scanner;
            try{
                File file = new File(filePath);
                Scanner scan = new Scanner(file);
+
                while(scan.hasNextLine()){
                    String line = scan.nextLine();
                    String [] parts = line.split(",");

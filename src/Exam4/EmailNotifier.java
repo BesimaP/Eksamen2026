@@ -9,6 +9,6 @@ package Exam4;
 
         @Override
         public void send(String message) {
-            System.out.println("Email til " + recipient + ": " + message);
+            System.out.println("Email to " + recipient + ": " + message);
         }
     }

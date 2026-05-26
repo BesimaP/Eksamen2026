@@ -28,7 +28,7 @@ public class SalesReader {
             }
             scanner.close();
         } catch (IOException e) {
-            System.out.println("Fejl ved indlæsning af filen: " + e.getMessage());
+            System.out.println("File not found" + e.getMessage());
         }
     }
 
@@ -41,29 +41,17 @@ public class SalesReader {
     }
 
     public double average(){
-        int sum = total();
-        int count = sales.size();
-        double average = (double) sum / count;
+        double average = (double) total() / sales.size();
         return average;
     }
 
     public int max (){
-        int max = sales.get(0); //antager den første er størst
-        for(int sale : sales){
-            if(sale > max){
-                max = sale;
+        int max = sales.get(0);
+        for(Integer i : sales){
+            if(i > max){
+                max = i;
             }
         }
         return max;
-    }
-
-    public int min(){
-        int min = sales.get(0);
-        for(int sale : sales){
-            if(sale < min){
-                min = sale;
-            }
-        }
-        return min;
     }
 }
