@@ -10,16 +10,38 @@ import java.util.ArrayList;
         }
 
         public void add(Contact c){
-            contacts.add(c);
+            if(findByName(c.getName()) == null){
+                contacts.add(c);
+            } else {
+                System.out.println(c.getName() + "findes allerede i telefonbogen");
+            }
         }
 
         public Contact findByName(String name){
             for(Contact c : contacts){
-                if(name.equals(c.getName())){
+                if(name.equalsIgnoreCase(c.getName()) ){
                     return c;
                 }
             }
             return null;
         }
+
+        public void remove(String name){
+            Contact c = findByName(name);
+            if(c != null){
+                contacts.remove(c);
+            }
+        }
+
+        public int size(){
+            return contacts.size();
+        }
+
+        public void printAll(){
+            for(Contact c : contacts){
+                System.out.println(c);
+            }
+        }
+
 
     }

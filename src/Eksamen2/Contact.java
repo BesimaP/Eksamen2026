@@ -12,4 +12,13 @@ package Eksamen2;
         public String getName(){
             return name;
         }
+
+        public String getPhoneNumber(){
+            return phoneNumber;
+        }
+
+        @Override
+        public String toString(){
+            return name + " - " + phoneNumber;
+        }
     }

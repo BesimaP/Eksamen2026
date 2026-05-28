@@ -8,7 +8,11 @@ package Eksamen4;
         }
 
         @Override
-        public void send(String message){
-            System.out.println("Slack: " + channel + ": " + message);
+        public void send(String message, int priority){
+            if(priority >= 5){
+                System.out.println("[VIGTIG] Slack: " + channel + ": " + message);
+            } else {
+                System.out.println("Slack: " + channel + ": " + message);
+            }
         }
     }

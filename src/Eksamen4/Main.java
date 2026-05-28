@@ -4,9 +4,9 @@ import java.util.ArrayList;
 
 public class Main {
 
-        public static void notifyAll(ArrayList<Notifier> notifiers, String message){
+        public static void notifyAll(ArrayList<Notifier> notifiers, String message, int priority){
                for(Notifier n : notifiers){
-                   n.send(message);
+                   n.send(message, priority);
                }
         }
 
@@ -17,6 +17,6 @@ public class Main {
             notifiers.add(new SmsNotifier());
             notifiers.add(new SlackNotifier("General"));
 
-            notifyAll(notifiers, "Hello from me. I'm a live");
+            notifyAll(notifiers, "Hello from me. I'm a live", 10);
         }
     }

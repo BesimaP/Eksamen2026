@@ -8,7 +8,7 @@ package Eksamen3;
             salesReader.readFile();
 
             System.out.println("Total: " + salesReader.total());
-            System.out.println("Average: " + salesReader.average());
+            System.out.println("Average: " + String.format("%.2f",salesReader.average()));
             System.out.println("Max: " + salesReader.max());
         }
     }

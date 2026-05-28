@@ -2,7 +2,7 @@ package Exam4;
 
 import java.util.ArrayList;
 
-public class Main {
+    public class Main {
         public static void notifyAll(ArrayList<Notifier> notifiers, String message){
             for(Notifier n : notifiers){
                 n.send(message);
@@ -16,7 +16,7 @@ public class Main {
             notifiers.add(new SmsNotifier());
             notifiers.add(new SlackNotifier("general"));
 
-            notifyAll(notifiers,"Hej alle sammen!");
+            System.out.println("--- SENDING NOTIFICATIONS ---");
+            notifyAll(notifiers, "Hej alle sammen!");
         }
     }
-

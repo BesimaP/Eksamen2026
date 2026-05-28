@@ -10,11 +10,11 @@ package Exam1;
         }
 
         public void deposit(double amount){
-            balance = balance + amount; //tildeling. anden måde man kunne skrive det: balance+= amount
+            balance = balance + amount; //balance+= amount
         }
 
         public void withdraw(double amount){
-            if(balance >= amount && amount > 0){ //if-else(betingelser/condition),boolsk udtryk, evaluere udtrykekt evalueres til true eller false, tildeling
+            if(balance >= amount){ //% && vil withdraw tilføje penge
                 balance = balance - amount;
             } else{
                 System.out.println("Insufficient funds in your account");

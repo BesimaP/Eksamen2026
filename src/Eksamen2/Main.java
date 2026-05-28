@@ -21,5 +21,7 @@ public class Main {
             } else {
                 System.out.println(søgenavn + " fundet i telefonbogen");
             }
+
+            phoneBook.printAll();
         }
     }
