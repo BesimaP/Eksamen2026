@@ -34,13 +34,4 @@ package Exam1;
             return balance;
         }
 
-        public boolean withdraw2(double amount){
-            if(balance >= amount){
-                balance = balance - amount;
-                return true;
-            } else{
-                System.out.println("Insufficient funds in your account");
-                return false;
-            }
-        }
     }
