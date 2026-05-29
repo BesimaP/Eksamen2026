@@ -10,14 +10,14 @@ package Eksamen6;
         }
 
         public void start(){
-            if(!engine.isRunning()){
-                engine.start();
-            } else {
-                System.out.println("Bilen kører allerede");
-            }
+            engine.start();
         }
 
         public void stop(){
-            engine.stop();
+           engine.stop();
+        }
+
+        public boolean isRunning(){
+            return engine.isRunning();
         }
     }

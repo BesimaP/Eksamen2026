@@ -14,7 +14,7 @@ package Exam1;
         }
 
         public void withdraw(double amount){
-            if(balance >= amount){ //% && vil withdraw tilføje penge
+            if(balance >= amount){
                 balance = balance - amount;
             } else{
                 System.out.println("Insufficient funds in your account");
@@ -32,5 +32,15 @@ package Exam1;
 
         public double getBalance() {
             return balance;
+        }
+
+        public boolean withdraw2(double amount){
+            if(balance >= amount){
+                balance = balance - amount;
+                return true;
+            } else{
+                System.out.println("Insufficient funds in your account");
+                return false;
+            }
         }
     }

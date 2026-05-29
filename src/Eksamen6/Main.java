@@ -2,7 +2,7 @@ package Eksamen6;
 
     public class Main {
         public static void main(String [] args ){
-            Engine engine = new Engine();
+            Engine engine = new Engine(150, 100);
             Car car1 = new Car("Tesla", engine);
 
             System.out.println("Status før start: " + engine.isRunning() + "\n");
