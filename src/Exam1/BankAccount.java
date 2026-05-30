@@ -10,7 +10,7 @@ package Exam1;
         }
 
         public void deposit(double amount){
-            balance = balance + amount; //balance+= amount
+            balance = balance + amount;
         }
 
         public void withdraw(double amount){

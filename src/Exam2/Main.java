@@ -1,6 +1,8 @@
 package Exam2;
 
-    public class Main {
+import java.util.Scanner;
+
+public class Main {
         public static void main(String [] args){
             PhoneBook phoneBook = new PhoneBook();
 
@@ -27,5 +29,8 @@ package Exam2;
             } else {
                 System.out.println("Tess found in the phone book");
             }
+
+            Scanner scan = new Scanner(System.in);
+            String input = scan.nextLine();
         }
     }

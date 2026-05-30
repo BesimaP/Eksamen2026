@@ -1,11 +1,11 @@
 package Exam2;
 
+import java.lang.reflect.Array;
 import java.util.ArrayList;
 
     public class PhoneBook {
         private ArrayList <Contact> contacts;
 
-        //tom <> diamond operator
         public PhoneBook(){
             this.contacts = new ArrayList<>();
         }

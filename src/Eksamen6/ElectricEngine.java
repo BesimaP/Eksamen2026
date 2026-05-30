@@ -3,8 +3,8 @@ package Eksamen6;
     public class ElectricEngine extends Engine{
         private double batteryLevel;
 
-        public ElectricEngine(int horsepower, double batteryLevel){
-            super(horsepower);
+        public ElectricEngine(int horsepower, int fuel, double batteryLevel){
+            super(horsepower,fuel);
             this.batteryLevel = batteryLevel;
         }
 
