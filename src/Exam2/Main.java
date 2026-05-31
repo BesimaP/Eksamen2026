@@ -29,8 +29,5 @@ public class Main {
             } else {
                 System.out.println("Tess found in the phone book");
             }
-
-            Scanner scan = new Scanner(System.in);
-            String input = scan.nextLine();
         }
     }

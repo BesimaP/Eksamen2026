@@ -12,9 +12,13 @@ import java.util.ArrayList;
         public static void main(String[] args){
             ArrayList<Notifier> notifiers = new ArrayList<>();
 
-            notifiers.add(new EmailNotifier("besima96@hotmail.com"));
-            notifiers.add(new SmsNotifier());
-            notifiers.add(new SlackNotifier("general"));
+            EmailNotifier email = new EmailNotifier("besima96@hotmail.com");
+            SmsNotifier sms = new SmsNotifier();
+            SlackNotifier slack = new SlackNotifier("general");
+
+            notifiers.add(email);
+            notifiers.add(sms);
+            notifiers.add(slack);
 
             System.out.println("--- SENDING NOTIFICATIONS ---");
             notifyAll(notifiers, "Hej alle sammen!");
